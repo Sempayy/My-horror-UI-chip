@@ -2,83 +2,71 @@
 *:before,
 *:after {
   box-sizing: border-box;
+  font-family: "Montserrat";
 }
 
 .list {
   margin: 0;
   border: 0;
   padding: 0;
+  list-style: none;
+  width: inherit;
+  height: inherit;
+  overflow-y: scroll;
 }
 
 .box {
   display: flex;
-  width: 270px;
-  height: auto;
-  background: #ffffff;
   position: relative;
+  width: 270px;
+  height: 639px;
+  background: #ffffff;
+  box-shadow: inset 0px -25px 30px -35px rgba(0, 0, 0, 0.856);
 }
 
 .box::before {
   content: "";
   display: block;
   position: fixed;
-  top: auto;
-  bottom: 0px;
-  height: 32px;
-  width: inherit;
-  background: linear-gradient(
-    180deg,
-    rgba(0, 0, 0, 0) 0%,
-    rgba(0, 0, 0, 0.2) 100%
-  );
-}
-
-.box::after {
-  content: "";
-  display: block;
-  position: fixed;
   top: 0px;
   bottom: auto;
-  height: 5px;
-  width: inherit;
+  height: 18px;
+  width: 260px;
   background: #ffffff;
 }
 
 .title {
-  position: sticky;
-  top: 5px;
   margin: 0px;
-  height: 44px;
-  padding: 10px 15px;
-  font-family: "Montserrat";
+  padding: 7px 15px;
   font-weight: 600;
-  line-height: 1.06;
   color: #ffffff;
   background: #570081;
 }
 
-.dir {
+.dir:not([class="dir sticky"]) {
   display: flex;
-  width: 240px;
-  height: 44px;
   background: #ffffff;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   border-radius: 8px;
   margin: 10px 15px;
 }
 
+.sticky {
+  position: sticky;
+  top: 10px;
+  margin: 10px 0px;
+}
+
 .link {
   display: block;
-  width: 240px;
-  height: 44px;
   padding: 12px 15px;
+  width: 100%;
   text-decoration: none;
   color: #000000;
   overflow: hidden;
   text-overflow: ellipsis;
   white-space: nowrap;
   cursor: pointer;
-  font-family: "Montserrat";
   font-weight: 400;
   box-shadow: 0px 1px 2px rgba(0, 0, 0, 0.05);
   background: #ffffff;
