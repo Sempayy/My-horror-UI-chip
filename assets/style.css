@@ -160,6 +160,7 @@
   display: inline-block;
   position: relative;
   line-height: 0;
+  align-self: center;
 }
 
 .base--checkbox__input {
@@ -237,7 +238,7 @@
 
 @media screen and (max-width: 800px) {
   .gradient-container__item {
-    width: clamp(650px, 100%, 800px);
-    height: clamp(300px, 100%, 310px);
+    width: clamp(650px, 75%, 800px);
+    height: clamp(300px, 75%, 310px);
   }
 }
