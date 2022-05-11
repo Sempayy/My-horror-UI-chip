@@ -229,11 +229,3 @@
   background-color: #d1c6d7;
 }
 
-/* Adaptive */
-
-@media screen and (max-width: 800px) {
-  .gradient-container__item {
-    width: clamp(650px, 75%, 800px);
-    height: clamp(300px, 75%, 310px);
-  }
-}
